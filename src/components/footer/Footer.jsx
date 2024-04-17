@@ -46,7 +46,7 @@ export default function Footer() {
           <li className="fListItem">Hotels</li>
         </ul>
       </div>
-      <div className="fText">Copyright &copy; 2022 Afrakay.</div>
+      <div className="fText">Copyright &copy; 2024 Afrakay.</div>
     </div>
   );
 }
