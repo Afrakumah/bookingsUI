@@ -4,10 +4,15 @@ import hotel2 from "../../assets/hotel2.jpg";
 import hotel3 from "../../assets/hotel3.jpg";
 import hotel4 from "../../assets/hotel4.jpg";
 import "./featuredProperties.css";
+import useFetch from "../../hooks/useFetch";
 
 
 
 export default function FeaturedProperties() {
+  const { data, loading, error } = useFetch(
+    "http://localhost:4000/api/hotels/hotels/countbytype"
+  );
+
   return (
     <div className="fp">
       <div className="fpItem">

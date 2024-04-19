@@ -7,9 +7,9 @@ import useFetch from "../../hooks/useFetch";
 
 export default function Featured() {
   const { data, loading, error } = useFetch(
-    "/hotels/countbycity?cities=kumasi,accra,koforidua"
+  "http://localhost:4000/api/hotels/countbycity?cities=kumasi,accra,koforidua"
   );
-  // console.log(data)
+  //  console.log(data)
   return (
     <div className="featured">
       {loading ? (
@@ -20,8 +20,8 @@ export default function Featured() {
             <img src={city1} alt="city" className="featuredImg" />
             <div className="featuredTitles">
               <h1>Kumasi</h1>
-              {/* <h2>532 properties</h2> */}
-              <h2>{data[0]} properties</h2>
+              <h2>532 properties</h2>
+              {/* <h2>{data[0]} properties</h2> */}
             </div>
           </div>
 
@@ -29,8 +29,8 @@ export default function Featured() {
             <img src={city2} alt="city" className="featuredImg" />
             <div className="featuredTitles">
               <h1>Accra</h1>
-              {/* <h2>532 properties</h2> */}
-              <h2>{data[1]} properties</h2>
+              <h2>533 properties</h2>
+              {/* <h2>{data[1]} properties</h2> */}
             </div>
           </div>
 
@@ -38,7 +38,8 @@ export default function Featured() {
             <img src={city3} alt="city" className="featuredImg" />
             <div className="featuredTitles">
               <h1>Koforidua</h1>
-              <h2>{data[2]} properties</h2>
+              <h2>534 properties</h2>
+              {/* <h2>{data[2]} properties</h2> */}
             </div>
           </div>
         </>
