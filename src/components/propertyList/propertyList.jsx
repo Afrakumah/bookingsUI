@@ -47,6 +47,8 @@ export default function propertyList() {
               </div>;
             })} */}
 
+            
+
           <div className="pListItem">
             <img src={property2} alt="property" className="pListImg" />
             <div className="pListTitles">
